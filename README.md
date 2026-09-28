@@ -2,6 +2,11 @@
 
 A medieval-themed activity discovery website that uses an API to generate random adventures for users.
 
+<img width="1840" height="855" alt="image" src="https://github.com/user-attachments/assets/a2ea7d4e-7e97-454a-b23d-38cde4942d4f" />
+<img width="1810" height="916" alt="image" src="https://github.com/user-attachments/assets/c87a7cb0-932c-4df7-8a6f-025e8f877c0b" />
+
+
+
 ## Features
 - Login system
 - Random activity generation using an API

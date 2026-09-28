@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Adventure Time</title>
+ <link rel="icon" href="compass.png">  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">    
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <audio autoplay loop><source src="audiofile (3).mp3" type="audio/mpeg"></audio>
+
+    <!--Login Page -->
+      
+    <div id="loginPage" class="login-container">  
+        <video id="loginVideo" autoplay loop muted>
+            <source src="login.mp4" type="video/mp4">
+          </video>    
+
+          <div id="loginContent">
+            <h1>Adventure Time 🧭</h1>
+            <p>Hail, traveller!<br> Speak thy name, and let thy quest begin! </p>
+            <input type="text" id="username" class="form-control" placeholder="Tell the gatekeeper your name">
+            <input type="password" id="password" class="form-control mt-3" placeholder="Whisper the secret word">
+            <button id="loginButton" class="btn btn-success w-100 mt-3">Cross the Gates of Muddy City</button>
+            <p id="loginMessage"></p>
+        </div>
+    </div>
+
+
+    <!--Mainpage -->
+
+    <div id="dashboard" class="container-fluid d-none">
+        <video id="dashboardVideo" autoplay loop muted> <source src="login.mp4" type="video/mp4"> </video>            
+
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- activity card -->
+                <div class="col-md-7">
+                    <div class="activity-card text-center">
+                        <h2>🧙‍♂️ Wizard Sigmo will guide you</h2>
+                        <p> Weary of idle hours?<br>Let API Oracle decide thy next undertaking...</p>
+                        <div id="activityBox">
+                            <h3 id="activityName"> Your quest awaits...</h3>
+                            <p id="activityType"> </p>
+                            <p id="activityParticipants"> </p>
+                        </div>
+
+                        <button id="generateButton" class="adventure-button">🔮 Get Adventure</button>
+                        <button id="saveButton" class="adventure-button">📜 Save Adventure </button>
+                        <p id="statusMessage"></p>
+                    </div>
+                </div>
+
+
+                <!-- saved adventures card -->
+                <div class="col-md-4 ">
+                    <div class="saved-card">
+                        <h3>📜 The Quest Archives</h3>
+                        <p> "Not all those who wander are lost"  - Bilbo Baggins </p>
+                        <ul id="savedActivities"> </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3"> <p>&copy; 2026 Peyshwara. All rights reserved. Thy fate has already been written. </p> </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+

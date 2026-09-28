@@ -1,0 +1,313 @@
+/* overall page */
+
+body {
+    margin: 0;
+    font-family: 'Fauna One', serif;
+    color: #333;
+}
+
+
+/* Login page */
+
+#loginPage {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+
+/* Login bg video */
+
+#loginVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px);   
+    transform: scale(1.05); /*bug: had to make video slightly bigger so edges of blur won't show*/
+    z-index: 0;
+}
+
+
+/* login box */
+
+#loginContent {
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    padding: 35px;
+    text-align: center;    
+    background-color: rgba(30, 25, 20, 0.4); /* Translucent glass effect */   
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Glass border */
+    border-radius: 20px;   
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); /* Modern shadow */    
+    backdrop-filter: blur(10px); /* Slightly blur anything behind the box */
+    color: white;
+}
+
+
+/* Login title */
+
+#loginContent h1 {
+    font-family: Cinzel, serif;
+    font-size: 35px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+
+/* Login subtitle / description */
+
+#loginContent p {
+    font-family: 'Fauna One', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+
+/* name input box */
+#username {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    font-family: 'Fauna One', serif;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    outline: none;
+}
+
+#password {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    font-family: 'Fauna One', serif;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    outline: none;
+}
+
+
+/* Placeholder text */
+
+#username::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#password::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+/* Log in button*/
+
+#loginButton {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px;
+    font-family: 'Fauna One', serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(100, 70, 35, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#loginButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    background-color: rgba(130, 90, 45, 0.95);
+}
+
+#loginButton:active {
+    transform: translateY(1px);
+}
+
+
+/* error message */
+
+#loginMessage {
+    margin-top: 15px;
+    color: #ffcccc;
+    font-weight: bold;
+}
+
+
+
+/* Dashboard */
+
+#dashboard {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* Dashboard video */
+
+#dashboardVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#dashboard .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* main content */
+
+#dashboardContent {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+/* activity card */
+
+.activity-card {
+    width: 80%;
+    margin-left: 60px;
+    background-color: rgba(30, 25, 20, 0.4);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    min-height: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+   }
+
+
+.activity-card h2 {
+    font-family: Cinzel, serif;
+    font-size: 30px;
+    color: rgb(250, 169, 20);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.activity-card p {
+    color: rgb(250, 250, 250);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+#activityBox {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(161, 112, 39, 0.6);
+    border-radius: 10px;
+}
+
+
+#activityName {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* get/save adventure buttons */
+
+.adventure-button {
+    margin: 15px;
+    padding: 10px 15px;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(60, 45, 30, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.adventure-button:hover {
+    background-color: rgba(100, 70, 35, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.adventure-button:active {
+    transform: translateY(1px);
+}
+
+
+/* saved adventures card */
+
+.saved-card {
+    background-color: rgba(30, 25, 20, 0.4);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 400px;
+    width: 80%;
+}
+
+
+.saved-card h3 {
+    font-family: Cinzel, serif;
+    font-size: 30px;
+    color: rgb(250, 169, 20);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.saved-card p {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+#savedActivities {
+    padding-left: 20px;
+}
+
+
+#savedActivities li {
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #fff4d6;
+    border-radius: 8px;
+}
+
+
+/* status message*/
+
+#statusMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
